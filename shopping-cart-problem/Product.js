@@ -1,18 +1,23 @@
 class Product{
     
-    constructor(productID, productName, productPrice, category){
-        this.productID = productID;
-        this.productName = productName;
-        this.productPrice = productPrice;
+    constructor({id, name, price, category}){
+        this.productID = id;
+        this.productName = name;
+        this.productPrice = price;
         this.category = category;
     }
 
     getProductDetails(){
-        // write your implementation here
+        return {
+            productID : this.productID,
+            productName : this.productNameproductID,
+            productPrice : this.productPriceproductID,
+            category : this.categoryproductID,
+        }
     }
 
     getProductPrice(){
-        // write your implementation here
+        return Number(this.productPrice);
     }
 }
 
